@@ -112,10 +112,12 @@
           const codeVerifier = generateRandomString(64); // Length must be between 43 and 128
           localStorage.setItem('code-verifier', codeVerifier); // Store code verifier for later use
           const codeChallenge = await generateCodeChallenge(codeVerifier);
-          const login = document.createElement('a');
-          APS_CLIENT_ID = document.getElementById('client_id').value;
-          login.href = generateLoginUrl(APS_CLIENT_ID, APS_CALLBACK_URL, ['data:read'], '123456', codeChallenge);
+          const login = document.createElement('button');
           login.innerText = 'Login';
+          login.onclick = () =>{
+            APS_CLIENT_ID = document.getElementById('client_id').value;
+            location.href =  generateLoginUrl(APS_CLIENT_ID, APS_CALLBACK_URL, ['data:read'], '123456', codeChallenge);
+          }
           document.body.appendChild(login);
         } catch (err) {
           document.write('<p>' + err + '</p>');
