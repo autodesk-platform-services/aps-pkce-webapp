@@ -82,8 +82,8 @@
       const resp = await fetch('https://developer.api.autodesk.com/authentication/v2/token', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json'
+          'Content-Type': 'application/x-www-form-urlencoded'
+          //'Accept': 'application/json'
         },
         body: Object.keys(payload).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(payload[key])).join('&')
       });
