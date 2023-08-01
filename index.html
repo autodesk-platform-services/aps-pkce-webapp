@@ -75,7 +75,7 @@
     async function exchangeToken(clientId, codeVerifier, code, callbackUrl) {
       const payload = {
         'grant_type': 'authorization_code',
-        'client_id': 'IkYnyadOeztikE3gsh3L8mUU07gZQkjO',
+        'client_id': APS_CLIENT_ID,
         'code_verifier': codeVerifier,
         'code': code,
         'redirect_uri': callbackUrl
