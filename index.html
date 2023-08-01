@@ -11,7 +11,8 @@
   <h1>PKCE Authorization Code Grant Example</h1>
   <input type="text" id="client_id" placeholder="type your client id here"></input>
   <script>
-    var APS_CLIENT_ID = '...';
+    var APS_CLIENT_ID = '';
+    // Change this if you deploy on your own repo
     var APS_CALLBACK_URL = 'https://joaomartins-callmejohn.github.io/PKCE-TEST';
 
     /**
@@ -99,6 +100,7 @@
       if (params.has('code')) { // If the URL contains a `code` query parameter, exchange it for an access token, and display the token on the page
         try {
           const codeVerifier = localStorage.getItem('code-verifier'); // Retrieve code verifier from local storage
+          APS_CLIENT_ID = localStorage.getItem('APS_CLIENT_ID'); // Retrieve client id from local storage
           const credentials = await exchangeToken(APS_CLIENT_ID, codeVerifier, params.get('code'), APS_CALLBACK_URL);
           document.write('<code>' + JSON.stringify(credentials) + '</code>');
         } catch (err) {
@@ -116,6 +118,7 @@
           login.innerText = 'Login';
           login.onclick = () =>{
             APS_CLIENT_ID = document.getElementById('client_id').value;
+            localStorage.setItem('APS_CLIENT_ID', APS_CLIENT_ID); // Store client id used for later use
             location.href =  generateLoginUrl(APS_CLIENT_ID, APS_CALLBACK_URL, ['data:read'], '123456', codeChallenge);
           }
           document.body.appendChild(login);
