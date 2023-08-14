@@ -28,7 +28,7 @@ If we use the localstorage to store the client id and the challenge code, we can
 
 If you wanna give it a try, you just need to add `https://autodesk-platform-services.github.io/aps-pkce-webapp` as a callback option in your APS app and click save, just like in the image below:
 
-![add callback url]()
+![add callback url](./assets/pkce%20app%20callback.png)
 
 With that you can already use your token.
 
