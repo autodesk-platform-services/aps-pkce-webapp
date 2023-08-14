@@ -10,7 +10,7 @@ The purpose of this sample is demonstrate a quick way to test and obtain your th
 
 As said by [Petr Broz](https://github.com/petrbroz) in [this blog post](https://aps.autodesk.com/blog/new-application-types):
 
->This option is recommended for scenarios where your application is running natively on a desktop or a mobile device, in other words, for scenarios where you cannot protect your app's credentials. This application type uses Proof Key for Code Exchange (PKCE) for increased security.
+> This option is recommended for scenarios where your application is running natively on a desktop or a mobile device, in other words, for scenarios where you cannot protect your app's credentials. This application type uses Proof Key for Code Exchange (PKCE) for increased security.
 
 The blog also covers a basic snippet that you can use to generate a token with this flow.
 With only a few modifications we can make a simple app hosted in github pages so you can better understand how it works (and generate your own tokens for testing).
@@ -23,12 +23,11 @@ To do that in a single page app without server side, we need no handle the steps
 
 If we use the localstorage to store the client id and the challenge code, we can manage the 3LO token acquisition from our sample test app.
 
-
 ## Pre-requisite
 
 If you wanna give it a try, you just need to add `https://autodesk-platform-services.github.io/aps-pkce-webapp` as a callback option in your APS app and click save, just like in the image below:
 
-![add callback url](./assets/pkce%20app%20callback.png)
+![add callback url](./assets/pkce-app-callback.png)
 
 With that you can already use your token.
 
