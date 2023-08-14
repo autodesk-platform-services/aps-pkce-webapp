@@ -37,6 +37,8 @@ Also, as long as you have this app [provisioned in your hub](https://tutorials.a
 
 Now you just need to type your client id at https://autodesk-platform-services.github.io/aps-pkce-webap and start the process to get your token.
 
+![PKCE Token](./assets/pkce-token.gif)
+
 ## License
 
 This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
