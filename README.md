@@ -13,7 +13,7 @@ As said by [Petr Broz](https://github.com/petrbroz) in [this blog post](https://
 > This option is recommended for scenarios where your application is running natively on a desktop or a mobile device, in other words, for scenarios where you cannot protect your app's credentials. This application type uses Proof Key for Code Exchange (PKCE) for increased security.
 
 The blog also covers a basic snippet that you can use to generate a token with this flow.
-With only a few modifications we can make a simple app hosted in github pages so you can better understand how it works (and generate your own tokens for testing).
+With only a few modifications we can make a simple app hosted in [github pages](https://pages.github.com) so you can better understand how it works (and generate your own tokens for testing).
 
 ## How it works?
 
