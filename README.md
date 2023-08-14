@@ -21,7 +21,7 @@ To do that in a single page app without server side, we need no handle the steps
 
 ![thumbnail](./assets/desktop-mobile-spa1.png)
 
-If we use the localstorage to store the client id and the challenge code, we can manage the 3LO token acquisition from our sample test app.
+If we use the [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to store the client id and the code verifier, we can manage the 3LO token acquisition from our app.
 
 ## Pre-requisite
 
@@ -29,11 +29,13 @@ If you wanna give it a try, you just need to add `https://autodesk-platform-serv
 
 ![add callback url](./assets/pkce-app-callback.png)
 
-With that you can already use your token.
+And with that you're able to obtain a valid token through this sample app.
 
-Also, as long as you have this app provisioned in a specific hub, this token can be used to view the contents you have access to inside the provisioned hub
+Also, as long as you have this app [provisioned in your hub](https://tutorials.autodesk.io/#provision-access-in-other-products), this token can be used to view the contents you have access to.
 
-You can basically type your own client id at https://joaomartins-callmejohn.github.io/PKCE-TEST/ and start the process to get your token.
+## Retrieving your token
+
+Now you just need to type your client id at https://autodesk-platform-services.github.io/aps-pkce-webap and start the process to get your token.
 
 ## License
 
