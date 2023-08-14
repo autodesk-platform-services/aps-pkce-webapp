@@ -1,7 +1,5 @@
 # APS-PKCE-WEBAPP
 
-# THIS IS A WORK IN PROGRESS
-
 ## Introduction
 
 The purpose of this sample is demonstrate a quick way to test and obtain your three legged tokens using PKCE method in the context of a single page app (you can refer [here](https://aps.autodesk.com/en/docs/oauth/v2/tutorials/get-3-legged-token-pkce/) for more details).
