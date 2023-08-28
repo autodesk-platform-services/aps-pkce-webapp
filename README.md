@@ -1,4 +1,4 @@
-# APS-PKCE-WEBAPP
+# PCKE client-side only
 
 ## Introduction
 
