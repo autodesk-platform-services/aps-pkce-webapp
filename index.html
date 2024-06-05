@@ -52,8 +52,8 @@
     function generateLoginUrl(clientId, callbackUrl, scopes, nonce, challenge) {
       const url = new URL('https://developer.api.autodesk.com/authentication/v2/authorize');
       url.searchParams.append('response_type', 'code');
-      url.searchParams.append('client_id', APS_CLIENT_ID);
-      url.searchParams.append('redirect_uri', APS_CALLBACK_URL);
+      url.searchParams.append('client_id', clientId);
+      url.searchParams.append('redirect_uri', callbackUrl);
       url.searchParams.append('scope', scopes.join(' '));
       url.searchParams.append('nonce', nonce);
       url.searchParams.append('prompt', 'login');
